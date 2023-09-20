@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Courgette&family=Dancing+Script&family=Oswald:wght@200&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   }
+  
+.HeroContainer{
+  background-image: url('./img/media/background.mp4') ;
+  width: 100%;
+  height: 100%;
+  
+}
+.heroBackground{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin-top: -100px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .mainbg
+    {
+      background-size: 40px 40px;
+      background-image: radial-gradient(circle at 1px 1px, rgb(103, 103, 103) 1px, transparent 0px);
+      background-position: center center;
+      transform: translateZ(-500px);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .mynametext{
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px;
+      /* font-family: 'Audiowide', cursive; */
+
   }
-}
+  .fullname ,.navtitle{
+    font-family: 'Audiowide', cursive;
+  }
+  .lastname{
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px; 
+
+  }
+  .firstname:hover{
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px; 
+      
+
+  }
+  .slide-out{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: black;
+      transform-origin: top;
+  }
+  .globe{
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      /* place-items: center; */
+      height: 500px;
+      width: 500px;
+      border-radius: 50%;
+      cursor: grabbing;
+      background-color: cadetblue;
+      object-fit: cover;
+      overflow: hidden;
+  }
+  .titles{
+    font-family: 'Satisfy', cursive;
+  }
+  .About_title{
+    font-family: 'Yatra One', cursive;
+  }
+  .contactHeading{
+    font-family: 'Oswald', sans-serif;
+
+  }
+
+
+  
+
+  .contactfield{
+    background-image: url('./img/map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .footer{
+    background-image: url('./img/map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
